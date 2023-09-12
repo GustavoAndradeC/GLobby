@@ -1,0 +1,4 @@
+name: GLobby
+version: '${project.version}'
+main: gustavoandradec.globby.GLobby
+api-version: '1.20'
