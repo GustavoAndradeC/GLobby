@@ -7,13 +7,15 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class GLobby extends JavaPlugin {
+public class GLobby extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getConsoleSender().sendMessage("PASSOUUUUUU!");
-        RegisterEvents();
+        saveDefaultConfig();
+        FileConfiguration config = getConfig();
 
+        Bukkit.getConsoleSender().sendMessage("tes:");
+        RegisterEvents();
     }
 
     public void RegisterEvents() {
@@ -21,5 +23,4 @@ public final class GLobby extends JavaPlugin {
         pm.registerEvents(new EventJAQ(),this);
         pm.registerEvents(new DoubleJump(), this);
     }
-
 }

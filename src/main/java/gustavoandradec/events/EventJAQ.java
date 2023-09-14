@@ -1,5 +1,6 @@
 package gustavoandradec.events;
 
+import gustavoandradec.globby.GLobby;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -16,8 +17,14 @@ public class EventJAQ implements Listener {
     public void Join(PlayerJoinEvent e) {
 
         Player p = e.getPlayer();
-        String Title = "Bem-vindo ao test";
-        String SubTitle = "Divirta-se jogando!";
+        e.setJoinMessage(null);
+
+        String titulo = GLobby.getPlugin(GLobby.class).getConfig().getString("titulo_login");
+        String subtitulo = GLobby.getPlugin(GLobby.class).getConfig().getString("subtitulo_login");
+
+
+        String Title = "Bem-vindo ao " + titulo;
+        String SubTitle = subtitulo + " " + e.getPlayer().getName();
         int fadeIn = 10;
         int stay = 70;
         int fadeOut = 20;
@@ -50,7 +57,7 @@ public class EventJAQ implements Listener {
         ItemStack Emerald = new ItemStack(Material.EMERALD, 1);
         int slotEmerald = 8;
 
-            ItemMeta EmeraldMeta = Compass.getItemMeta();
+            ItemMeta EmeraldMeta = Emerald.getItemMeta();
             if (EmeraldMeta != null) {
                 EmeraldMeta.setDisplayName("Loja");
                 Emerald.setItemMeta(EmeraldMeta);
@@ -69,10 +76,11 @@ public class EventJAQ implements Listener {
     @EventHandler
     public void Quit(PlayerQuitEvent e) {
         Player p = e.getPlayer();
+        e.setQuitMessage(null);
 
         String QuitMsg = "§8[§c-§8]" + p.getName();
 
-        for (Player on: p.getServer().getOnlinePlayers()) {
+        for (Player on : p.getServer().getOnlinePlayers()) {
             on.sendMessage(QuitMsg);
         }
     }

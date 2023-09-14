@@ -1,0 +1,8 @@
+#Nome do Servidor
+titulo_login: "LuckMc"
+subtitulo_login: "Divirta-se"
+
+#Erros
+mensagens_de_erro:
+  player_nao_encontrado: "&cJogador não encontrado."
+  permissao_insuficiente: "&cVocê não tem permissão para fazer isso."
