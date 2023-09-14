@@ -13,7 +13,6 @@ public class GLobby extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
         FileConfiguration config = getConfig();
-
         Bukkit.getConsoleSender().sendMessage("tes:");
         RegisterEvents();
     }
