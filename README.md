@@ -13,8 +13,7 @@ O Plugin consegue fazer com que dois jogadores mesmo que em mapas diferentes con
 <img width="64" height="64" src="https://img.icons8.com/stickers/100/rocket.png" alt="settings"/><br>
 Melhorias futuras</h1>
 
-- Adicionar FileConfiguration
-- Ligar junto com o banco de dados e BungeeCord
+- Ligar o Banco de dados com BungeeCord
 
 
 <br>
