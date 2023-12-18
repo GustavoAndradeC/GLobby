@@ -17,7 +17,7 @@ Em Desenvolvimento - Implementação de Recursos
 
 ## Contato
 
-- LinkedIn: [Gustavo Andrade](https://www.linkedin.com/in/seu-nome)
+- LinkedIn: [Gustavo Andrade](https://www.linkedin.com/in/gustavoandradec/)
 
 ## Badges
 
