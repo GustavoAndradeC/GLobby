@@ -1,4 +1,4 @@
-# GLobby Redux
+# GLobby 
 
 O Plugin GLobby é um plugin totalmente configuravel que conta com diversas funcionalidades que fazem o jogador ter um hub podendo escolher um item e ser redirecionado ao ip atribuido no item escolhido.
 
